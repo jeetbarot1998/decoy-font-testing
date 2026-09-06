@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoy Font</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">EXPERIMENT</p>
+      <h1>Decoy Font</h1>
+      <p class="subtitle">Type something and see it rendered using the Decoy Font.</p>
+    </header>
+
+    <section class="card">
+      <label for="input">Your text</label>
+      <textarea id="input" spellcheck="false" placeholder="Start typing...">Hello, this is a Decoy Font.</textarea>
+
+      <div class="controls">
+        <label>
+          Font size
+          <input id="size" type="range" min="16" max="120" value="56">
+          <span id="sizeValue">56px</span>
+        </label>
+        <button id="clear" type="button">Clear</button>
+      </div>
+    </section>
+
+    <section class="preview-card">
+      <div class="preview-header">
+        <span>Preview</span>
+        <button id="download" type="button">Download PNG</button>
+      </div>
+      <div id="preview" class="preview"></div>
+    </section>
+
+    <p class="note">The font is loaded locally from <code>fonts/DecoyFont.ttf</code>. Nothing is sent to a server.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
